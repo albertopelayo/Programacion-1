@@ -1,0 +1,45 @@
+#include "stdafx.h"
+#include "iostream"
+#include "stdio.h"
+#include "float.h"
+using namespace std;
+
+
+int _tmain(int argc, _TCHAR* argv[])
+{
+    float prom1, prom2, prom3;
+	cout<<"Alberto Javier Pelayo Brambila 2A 14300308"<<endl;
+	cout<<" "<<endl;
+	cout<<"Este programa esta hecho por Alberto Javier Pelayo Brambila y"<<endl;
+	cout<<"te servira para revisar promedios y en base al promedio el premio que se otorgara"<<endl;
+    cout<<" "<<endl;
+    cout<<"Favor de ingresar el promedio del primer alumno"<<endl;
+	cin>>prom1;
+	cout<<"Favor de ingresar el promedio del segundo alumno"<<endl;
+	cin>>prom2;
+	cout<<"Favor de ingresar el promedio del tercer alumno"<<endl;
+	cin>>prom3;
+
+    if (prom1==95) cout<<"El primer alumno ha obtenido una beca completa de acuerdo a su promedio"<<endl;
+	else if (prom1==84) cout<<"El primer alumno ha obtenido media beca de acuerdo a su promedio"<<endl;
+	else if (prom1==98.5) cout<<"El primer alumno ha obtenido un premio especial de acuerdo a su promedio"<<endl;
+    cout<<" "<<endl;
+
+	if (prom2==95) cout<<"El segundo alumno ha obtenido una beca completa de acuerdo a su promedio"<<endl;
+	else if (prom2==84) cout<<"El segundo alumno ha obtenido media beca de acuerdo a su promedio"<<endl;
+	else if (prom2==98.5) cout<<"El segundo alumno ha obtenido un premio especial de acuerdo a su promedio"<<endl;
+    cout<<" "<<endl;
+
+	if (prom3==95) cout<<"El tercer alumno ha obtenido una beca completa de acuerdo a su promedio"<<endl;
+	else if (prom3==84) cout<<"El tercer alumno ha obtenido media beca de acuerdo a su promedio"<<endl;
+	else if (prom3==98.5) cout<<"El tercer alumno ha obtenido un premio especial de acuerdo a su promedio"<<endl;
+	cout<<" "<<endl;
+
+	cout<<" "<<endl;
+	cout<<"Felicidades a los alumnos por sus promedios"<<endl;
+	system ("pause");
+	return 0;
+    
+}
+
+
