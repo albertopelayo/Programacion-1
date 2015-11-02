@@ -1,0 +1,29 @@
+#include "stdafx.h"
+#include "iostream"
+
+using namespace std;
+
+int _tmain(int argc, _TCHAR* argv[])
+{
+	int i; 
+	float sueldo, comision, total;
+	i=1;
+		while (i<4){
+			cout<<"Vendedor "<<i<<endl;
+			cout<<" "<<endl;
+			cout<<"Ingrese el sueldo del vendedor "<<i<<endl;
+			cin>>sueldo;
+			if (sueldo<3500) comision=sueldo*0.034;
+			else if (sueldo>3500 && sueldo<4800) comision=sueldo*0.028;
+            else if (sueldo>4800 && sueldo<6000) comision=sueldo*0.018;
+			total=sueldo+comision;
+			cout<<"El sueldo es de $ "<<sueldo<<endl;
+			cout<<"La comision es de $ "<<comision<<endl;
+			cout<<"El total del sueldo tomando en cuenta la comision es $ "<<total<<endl;
+			cout<<" "<<endl;
+			i=i+1;
+		}
+		system("pause");
+	return 0;
+}
+
