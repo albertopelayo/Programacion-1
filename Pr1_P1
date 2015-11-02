@@ -20,4 +20,5 @@ printf( "La suma es %d", suma ); /* imprime la suma */
 
 getch();
 return 0; /* indica que el programa terminó con éxito */ 
+
 }
