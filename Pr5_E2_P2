@@ -1,0 +1,30 @@
+#include "stdafx.h"
+#include "iostream"
+
+using namespace std;
+
+int _tmain(int argc, _TCHAR* argv[])
+{
+	int i; 
+	float mes1, mes2, mes3, total, comision;
+	i=1;
+		while (i<4){
+			cout<<"Empleado "<<i<<endl;
+			cout<<" "<<endl;
+			cout<<"Ingrese la venta del vendedor "<<i<<" en el mes 1"<<endl;
+			cin>>mes1;
+            cout<<"Ingrese la venta del vendedor "<<i<<" en el mes 2"<<endl;
+			cin>>mes2;
+			cout<<"Ingrese la venta del vendedor "<<i<<" en el mes 3"<<endl;
+			cin>>mes3;
+			total=mes1+mes2+mes3;
+		    comision=total*0.08;
+			cout<<"El total de ventas es de $ "<<total<<endl;
+			cout<<"La comision por las ventas en tres meses es de $ "<<comision<<endl;
+			cout<<" "<<endl;
+			i=i+1;
+		}
+		system("pause");
+	return 0;
+}
+
