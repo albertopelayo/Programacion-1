@@ -1,0 +1,122 @@
+#include "stdafx.h"
+#include "iostream"
+#include "stdio.h"
+#include "cstdlib"
+#include "string"
+using namespace std;
+
+int _tmain(int argc, _TCHAR* argv[])
+{
+	string alumno[5][6];
+	int i;
+	int opc;
+	float resultado=0;
+	string venta[5][4];
+	string aumento[5][4];
+	do{
+		cout<<" "<<endl;
+		cout<<" "<<endl;
+		cout<<" "<<endl;
+	cout<<"Bienvenido usuario. Elija una opcion del siguiente menu"<<endl;
+	cout<<"1: Promedios"<<endl;
+	cout<<"2: Total Ventas"<<endl;
+	cout<<"3: Aumentos"<<endl;
+	cout<<"4: Salir"<<endl;
+	cin>>opc;
+	cout<<" "<<endl;
+	switch (opc) {
+		case 1: 
+			for (i=0; i<=4; i++){
+				cout<<"Ingrese el nombre del alumno "<<i+1<<endl;
+				cin>>alumno[i][0];
+			}
+			for (i=0; i<=4; i++){
+				cout<<"Ingrese el grado del alumno "<<i+1<<endl;
+				cin>>alumno[i][1];
+			}
+			for (i=0; i<=4; i++){
+				cout<<"Ingrese el grupo del alumno "<<i+1<<endl;
+				cin>>alumno[i][2];
+			}
+			for (i=0; i<=4; i++){
+				cout<<"Ingrese la materia del alumno "<<i+1<<endl;
+				cin>>alumno[i][3];
+			}
+			for (i=0; i<=4; i++){
+				cout<<"Ingrese el profesor del alumno "<<i+1<<endl;
+				cin>>alumno[i][4];
+			}
+			for (i=0; i<=4; i++){
+				cout<<"Ingrese la calificacion del alumno "<<i+1<<endl;
+				cin>>alumno[i][5];
+			}
+			
+			//Tabla resultados
+			cout<<endl;
+			cout<<"Nombre\t\tGrado\t\tGrupo\t\tMateria\t\tProfesor\t\tCalificacion"<<endl;
+			for(i=0; i<=4; i++){
+				cout<<alumno[i][0] << "\t"<< "\t" <<alumno[i][1] << "\t"<< "\t" <<alumno[i][2] << "\t"<< "\t" <<alumno[i][3] << "\t"<< "\t" <<alumno[i][4] << "\t" <<alumno[i][5] <<endl;
+				resultado += ::atof(alumno[i][5].c_str());
+			}
+			cout<<endl;
+			cout<<"El resultado de todos los alumnos es: "<< resultado/5<<endl;
+			break;
+		case 2:
+			for (i=0; i<=4; i++){
+				cout<<"Ingrese el nombre del empleado "<<i+1<<endl;
+				cin>>venta[i][0];
+			}
+			for (i=0; i<=4; i++){
+				cout<<"Ingrese el total de ventas del mes del empleado "<<i+1<<endl;
+				cin>>venta[i][1];
+			}
+			for (i=0; i<=4; i++){
+				cout<<"Ingrese la comision por ventas en el mes del empleado "<<i+1<<endl;
+				cin>>venta[i][2];
+			}
+			for (i=0; i<=4; i++){
+				cout<<"Ingrese el sueldo del empleado "<<i+1<<endl;
+				cin>>venta[i][3];
+			}
+			//Tabla resultados
+			cout<<endl;
+			cout<<"Nombre\t\tTotal de ventas\t\tcomision\t\tSueldo"<<endl;
+			for(i=0; i<=4; i++){
+				cout<<venta[i][0] << "\t"<< "\t" <<venta[i][1] << "\t"<< "\t" <<venta[i][2] << "\t"<< "\t" <<venta[i][3] <<endl;
+			}
+			break;
+		case 3:
+			for (i=0; i<=4; i++){
+				cout<<"Ingrese el nombre del empleado "<<i+1<<endl;
+				cin>>aumento[i][0];
+			}
+			for (i=0; i<=4; i++){
+				cout<<"Ingrese el sueldo del empleado "<<i+1<<endl;
+				cin>>aumento[i][1];
+			}
+			for (i=0; i<=4; i++){
+				cout<<"Ingrese el aumento del empleado "<<i+1<<endl;
+				cin>>aumento[i][2];
+			}
+
+		
+			
+			//Tabla resultados
+			cout<<endl;
+			cout<<"Nombre\t\tSueldo\t\taumento"<<endl;
+			for(i=0; i<=4; i++){
+				cout<<aumento[i][0] << "\t"<< "\t" <<aumento[i][1] << "\t"<< "\t" <<aumento[i][2] <<endl;
+			}
+
+			break;
+			 case 4: break;
+	}
+	} while (opc!=4);
+
+
+	
+
+
+    system ("pause");
+	return 0;
+}
