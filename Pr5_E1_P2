@@ -1,0 +1,36 @@
+#include "stdafx.h"
+#include "iostream"
+
+using namespace std;
+
+int _tmain(int argc, _TCHAR* argv[])
+{ 
+	int i, a, mate, fisica, quimi, espa, compu, prom;
+   i=1;
+while (i<4) { 
+	cout<<"Alumno "<<i<<endl;
+	cout<<" "<<endl;
+	cout<<"Ingrese la calificacion de matematicas del alumno "<<i<<endl;
+    cin>> mate;
+	cout<<"Ingrese la calificacion de fisica del alumno "<<i<<endl;
+    cin>> fisica;
+	cout<<"Ingrese la calificacion de quimica del alumno "<<i<<endl;
+    cin>> quimi;
+	cout<<"Ingrese la calificacion de español del alumno "<<i<<endl;
+    cin>> espa;
+	cout<<"Ingrese la calificacion de computacion del alumno "<<i<<endl;
+    cin>> compu;
+	prom=(mate+fisica+quimi+espa+compu)/5;
+	cout<<"El alumno "<<i<<" Tiene un promedio de "<<prom<<endl;
+	if (prom==90) cout<<"El alumno "<<i<<" tiene media beca"<<endl;
+	else if (prom==98) cout<<"El alumno "<<i<<" tiene beca completa"<<endl;
+	else if (prom==80) cout<<"El alumno "<<i<<" tiene bienevales"<<endl;
+	else if (prom==70) cout<<"El alumno "<<i<<" no obitiene nada"<<endl;
+	else if (prom==100) cout<<"El alumno "<<i<<" tiene premio especial"<<endl;
+	cout<<" "<<endl;
+	i=i+1;
+}
+
+  system("pause");
+	return 0;
+}
