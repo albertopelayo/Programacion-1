@@ -1,0 +1,23 @@
+#include "stdafx.h"
+#include "windows.h"
+#include "stdio.h"
+#include "conio.h"
+
+
+int main(void)
+{
+	 int entero1; /* primer número introducido por el usuario */
+int entero2; /* segundo número introducido por el usuario */
+int suma; /* variable en la cual se almacena la suma */
+
+printf( "Introduzca el primer entero " ); /* indicador */ scanf( "%d", &entero1 ); /* lee un entero */
+
+printf( "Introduzca el segundo entero " ); /* indicador */
+scanf( "%d", &entero2 ); /* lee un entero */
+suma = entero1 + entero2; /* asigna el total a suma */
+
+printf( "La suma es %d", suma ); /* imprime la suma */
+
+getch();
+return 0; /* indica que el programa terminó con éxito */ 
+}
