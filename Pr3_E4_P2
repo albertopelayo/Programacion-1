@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include "stdafx.h"
+#include "iostream"
+using namespace std;
+	int main ()
+{
+
+         int i=124;
+         const int tope=123;
+         for(i=0;i<=123;i=i+7){
+         printf("%d\n",i);
+         }
+         printf("\n,Hasta pronto");
+system("pause");
+return 0;
+}
