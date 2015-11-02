@@ -1,0 +1,60 @@
+#include "stdafx.h"
+#include "stdio.h"
+#include "conio.h"
+#include "iostream"
+#include "float.h"
+
+using namespace std;
+
+int _tmain(int argc, _TCHAR* argv[])
+{
+	float baset, alturat, areat, lado, apotema, perimetrop, areap, areabasepris, alturapris, volumenpris, perimetroo;
+	
+
+	cout<<("Alberto Javier Pelayo Brambila 2A 14300308.") <<endl;
+	cout <<" "<<endl;
+	cout <<("Este programa esta hecho por Alberto Javier Pelayo Brambila y te")<<endl;
+	cout <<("servira para calcular el area de un triangulo y un pentagono regular,")<<endl;
+	cout <<"ademas del volumen de un prisma y el perimetro de un octagono regular."<<endl;
+	cout <<" "<<endl;
+
+	cout <<("Area de un triangulo.")<<endl;
+	cout <<"Por favor ingrese el valor de la base (unidades)."<<endl;
+	cin>> baset;
+	cout <<"Por favor ingrese el valor de la altura (unidades)."<<endl;
+	cin>> alturat;
+    areat=baset*alturat/2;
+	cout <<"El area del triangulo es: " <<areat<<" unidades."<<endl;
+	cout <<" "<<endl;
+
+	cout <<("Area de un pentagono regular.")<<endl;
+	cout <<"Por favor ingrese el valor de un lado (unidades)."<<endl;
+	cin>> lado;
+	cout <<"Por favor ingrese el valor del apotema (unidades)."<<endl;
+	cin>> apotema;
+	perimetrop=lado*5;
+    areap=perimetrop*apotema/2;
+	cout <<"El area del pentagono regular es: " <<areap<<" unidades."<<endl;
+	cout <<" "<<endl;
+
+	cout <<("Volumen de un prisma.")<<endl;
+	cout <<"Por favor ingrese el valor del area de la base del prisma (unidades)."<<endl;
+	cin>> areabasepris;
+	cout <<"Por favor ingrese el valor de la altura del prisma (unidades)."<<endl;
+	cin>> alturapris;
+    volumenpris=areabasepris*alturapris;
+	cout <<"El el volumen del prisma es: " <<volumenpris<<" unidades."<<endl;
+	cout <<" "<<endl;
+
+	cout <<("Perimetro de un octagono regular.")<<endl;
+	cout <<"Por favor ingrese el valor de un lado (unidades)."<<endl;
+	cin>> lado;
+	perimetroo=lado*8;
+	cout <<"El perimetro del octagono regular es: " <<perimetroo<<" unidades."<<endl;
+	cout <<" "<<endl;
+
+	cout <<"Fin del programa, Gracias por usar este programa, vuelva pronto."<<endl;
+
+	system ("pause");
+	return 0;
+}
