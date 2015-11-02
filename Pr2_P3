@@ -1,0 +1,77 @@
+#include "stdafx.h"
+#include "iostream"
+#include "stdio.h"
+#include "cstdlib"
+using namespace std;
+
+
+
+int _tmain(int argc, _TCHAR* argv[])
+{
+	int prom [5];
+	float sueldo [5];
+	float sueldof [5];
+	float comi [5];
+	float ventas [5];
+	int opc;
+	int i;
+	do{
+		cout<<" "<<endl;
+		cout<<" "<<endl;
+		cout<<" "<<endl;
+	
+	cout<<"1: Promedios"<<endl;
+	cout<<"2: Total Ventas"<<endl;
+	cout<<"3: Aumentos"<<endl;
+	cout<<"4: Salir"<<endl;
+	cin>>opc;
+	cout<<" "<<endl;
+	switch (opc) {
+		case 1: if (system("CLS")) system ("clear");
+			 cout<<"PROMEDIOS"<<endl;
+			 for (i=0;i<=4;i++)
+			 { cout<<"Ingrese el promedio "<<i+1<<endl;
+			 cin>>prom[i];
+			 }
+		     for (i=0;i<=4;i++)
+			 { cout<<"El promedio del alumno "<<i+1<<" es "<<prom[i]<<endl;}
+			 
+			break;
+		case 2: if (system("CLS")) system ("clear");
+			cout<<"Total de ventas"<<endl;
+
+			for (i=0;i<=4;i++)
+			 { cout<<"Ingrese el sueldo del empleado "<<endl;
+			   cin>>sueldo[i];
+			   cout<<"Ingrese el total de ventas del mes "<<i+1<<endl;
+			   cin>>ventas[i];
+			   cout<<"Ingrese la comision de ventas del empleado en el mes"<<i+1<<endl;
+			   cin>>comi[i];
+			   sueldof[i]=sueldo[i]+(ventas[i]*(comi[i]/100));
+		 
+			 }
+		     for (i=0;i<=4;i++)
+			 { cout<<"El sueldo final del empleado "<<i+1<<" es "<<sueldof[i]<<endl;}
+			 
+			break;
+     case 3: if (system("CLS")) system ("clear");
+			cout<<"Aumentos"<<endl;
+
+			for (i=0;i<=4;i++)
+			 { cout<<"Ingrese el sueldo del empleado "<<i+1<<endl;
+			   cin>>sueldo[i];
+			   cout<<"Ingrese la comision del empleado "<<i+1<<endl;
+			   cin>>comi[i];
+			   sueldof[i]=sueldo[i]+(sueldo[i]*(comi[i]/100));
+		 
+			 }
+		     for (i=0;i<=4;i++)
+			 { cout<<"El sueldo final del empleado "<<i+1<<" es "<<sueldof[i]<<endl;}
+			
+			break;
+	 case 4: break;
+	}
+	} while (opc!=4);
+	system("pause");
+	return 0;
+}
