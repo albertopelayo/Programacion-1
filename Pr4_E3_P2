@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include "stdafx.h"
+#include "iostream"
+using namespace std;
+void main()
+{
+         int i=0;
+         const int tope=30;
+		 do {
+			 i=i+2;
+                   printf("%d\n",i);
+         } while (i<=31);
+         printf("\nHasta pronto");
+system ("pause");
+}
