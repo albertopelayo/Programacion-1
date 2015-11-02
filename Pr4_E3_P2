@@ -13,3 +13,4 @@ void main()
          printf("\nHasta pronto");
 system ("pause");
 }
+
