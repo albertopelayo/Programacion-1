@@ -1,0 +1,35 @@
+#include "stdafx.h"
+#include "iostream"
+#include "conio.h"
+#include "stdio.h"
+
+using namespace std;
+
+
+int main (void)
+{
+	int i,mayor,menor,a;
+   cout << "Bienvenido \nIngrese 20 numeros y el programa determinara el mayor y el menor" <<endl<<endl;
+menor = 99999999;
+   mayor = -999;
+   a=0;
+   do{
+     cout << "Ingrese numero" <<endl;
+     cin >> i;
+if(i>mayor)
+     {
+      mayor=i;
+     }
+if(i<menor)
+{
+menor=i;
+      } a=a+1;                               
+   }
+while (a<=20);
+
+  cout << "El numero mayor ingresado es " <<mayor<<endl;
+  cout << "El numero menor ingresado es " <<menor<<endl;
+  system("pause");
+return 0;
+}
+
