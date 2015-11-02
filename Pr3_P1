@@ -1,0 +1,69 @@
+include "stdafx.h"
+#include "stdio.h"
+#include "windows.h"
+#include "conio.h"
+
+
+int main(void)
+{
+	int suma;
+	int resta;
+	int multi;
+	int divi;
+	int num1;
+	int num2;
+	int num3;
+	int num4;
+	int num5;
+	int num6;
+	int num7;
+	int num8;
+
+	printf("\nEste programa esta hecho por Alberto Javier Pelayo Brambila y te servira para realizar las 4 pincipales operaciones");
+    printf("\n");
+	printf("\nSuma");
+	printf("\n");
+	printf("\nIngrese el primer numero a sumar: ");
+	scanf( "\n%d", &num1);
+	printf("\nIngrese el segundo numero a sumar: ");
+	scanf( "\n%d", &num2);
+	suma=num1+num2;
+	printf("\n");
+		printf("\nEl resultado de la suma es: %d",suma);
+
+    printf("\n");
+	printf ("\nResta");
+    printf("\n");
+	printf("\Ingrese el primer numero a restar: ");
+    scanf("\n%d", &num3);
+	printf("\nIngrese el segundo numero a restar: ");
+	scanf( "\n%d", &num4);
+	resta=num3-num4;
+	printf("\n");
+		printf("\nEl resultado de la resta es: %d",resta);
+    printf("\n");
+    printf("\nMultiplicacion");
+	printf("\n");
+	printf("\nIngrese el primer numero a multiplicar: ");
+	scanf( "\n%d", &num5);
+	printf("\nIngrese el segundo numero a multiplicar: ");
+	scanf( "\n%d", &num6);
+	multi=num5*num6;
+	printf("\n");
+		printf("\nEl resultado de la multiplicacion es: %d",multi);
+	 printf("\n");
+    printf("\nDivision");
+	printf("\n");
+	printf("\nIngrese el primer numero a dividir: ");
+	scanf( "\n%d", &num7);
+	printf("\nIngrese el segundo numero a dividir: ");
+	scanf( "\n%d", &num8);
+	divi=num7/num8;
+	printf("\n");
+		printf("\nEl resultado de la division es: %d",divi);
+    printf("\n");
+	printf("\nGracias por usar este programa");
+	getch();
+	return 0;
+
+}
