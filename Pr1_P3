@@ -1,0 +1,82 @@
+#include "stdafx.h"
+#include "stdio.h"
+#include "iostream"
+#include "cstdlib"
+using namespace std;
+
+int _tmain(int argc, _TCHAR* argv[])
+{
+	int opc, prom1, prom2, prom3, prom4, prom5, total1, total2, total3, total4, total5, aume1, aume2, aume3, aume4, aume5;
+	do {
+	cout<<"Bienvenido el menu es el siguiente"<<endl;
+	cout<<"1 Promedios"<<endl; cout<<"2 Total de venta"<<endl; cout<<"3 Aumentos"<<endl; cout<<"4 Salir"<<endl;
+	cout<<"Ingrese la opcion que desea ejecutar"<<endl;
+    cin>>opc;
+	
+	switch (opc){
+	case 1: 
+		    cout<<"PROMEDIOS"<<endl;
+		    cout<<"Ingrese promedio 1"<<endl;
+		    cin>>prom1;
+			cout<<"Ingrese promedio 2"<<endl;
+		    cin>>prom2;
+			cout<<"Ingrese promedio 3"<<endl;
+		    cin>>prom3;
+			cout<<"Ingrese promedio 4"<<endl;
+		    cin>>prom4;
+			cout<<"Ingrese promedio 5"<<endl;
+		    cin>>prom5;
+			cout<<"Promedio 1: "<<prom1<<endl;
+			cout<<"Promedio 2: "<<prom2<<endl;
+			cout<<"Promedio 3: "<<prom3<<endl;
+			cout<<"Promedio 4: "<<prom4<<endl;
+			cout<<"Promedio 5: "<<prom5<<endl;
+            if (system("CLS")) system ("clear");
+			break;
+    case 2: 
+		    cout<<"TOTALES DE VENTA"<<endl;
+		    cout<<"Ingrese el total de venta del mes 1"<<endl;
+		    cin>>total1;
+			cout<<"Ingrese el total de venta del mes 2"<<endl;
+		    cin>>total2;
+			cout<<"Ingrese el total de venta del mes 3"<<endl;
+		    cin>>total3;
+			cout<<"Ingrese el total de venta del mes 4"<<endl;
+		    cin>>total4;
+			cout<<"Ingrese el total de venta del mes 5"<<endl;
+		    cin>>total5;
+			cout<<"El total de venta del mes 1: "<<total1<<endl;
+			cout<<"El total de venta del mes 2: "<<total2<<endl;
+			cout<<"El total de venta del mes 3: "<<total3<<endl;
+			cout<<"El total de venta del mes 4: "<<total4<<endl;
+			cout<<"El total de venta del mes 5: "<<total5<<endl;
+			if (system("CLS")) system ("clear");
+			break;
+	case 3: 
+		    cout<<"AUMENTOS"<<endl;
+		    cout<<"Ingrese el aumento 1"<<endl;
+		    cin>>aume1;
+			cout<<"Ingrese el aumento 2"<<endl;
+		    cin>>aume2;
+			cout<<"Ingrese el aumento 3"<<endl;
+		    cin>>aume3;
+			cout<<"Ingrese el aumento 4"<<endl;
+		    cin>>aume4;
+			cout<<"Ingrese el aumento 5"<<endl;
+		    cin>>aume5;
+			cout<<"El aumento 1: "<<aume1<<endl;
+			cout<<"El aumento 2: "<<aume2<<endl;
+			cout<<"El aumento 3: "<<aume3<<endl;
+			cout<<"El aumento 4: "<<aume4<<endl;
+			cout<<"El aumento 5: "<<aume5<<endl;
+			if (system("CLS")) system ("clear");
+			break;
+	case 4: break;
+	}
+	} while (opc!=4);
+
+	system ("pause");
+	return 0;
+
+}
+
