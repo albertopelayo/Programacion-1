@@ -1,0 +1,99 @@
+#include "stdafx.h"
+#include "stdio.h"
+#include "iostream"
+#include "math.h"
+using namespace std;
+
+int _tmain(int argc, _TCHAR* argv[])
+{
+	float a, b, c, d, e;
+	cout << "Alberto Javier Pelayo Brambila, 14300308, 2A" << endl;
+	cout << "En este programa se podran calcular las comisiones de 5 personas" "\n" << endl;
+	cout << "La venta del mes 1 es igual a " "\n"<< endl;
+	cin >> a;
+		if  (a >= 80000 && a< 120000)
+			cout << "Comisión es de 6400" "\n" << endl;
+		else
+			if (a >=120000 && a < 150000)
+			cout << "Comisión es de 13200" "\n" << endl;
+			else
+				if (a>=150000 && a < 200000)
+				cout << "Comisión es de 19500" "\n" << endl;
+				else
+				if (a>=200000 && a < 250000)
+				cout << "Comisión es de 36000" "\n" << endl;
+				else 
+				if (a>=25000)
+				cout << "Comisión es de 50000" "\n" << endl;
+			
+	cout << "La venta del mes 2 es igual a " "\n"<< endl;
+	cin >> b;
+		if  (b >= 80000 && b< 120000)
+			cout << "Comisión es de 6400" "\n" << endl;
+		else
+			if (b >=120000 && b < 150000)
+			cout << "Comisión es de 13200" "\n" << endl;
+			else
+				if (b>=150000 && b < 200000)
+				cout << "Comisión es de 19500" "\n" << endl;
+				else
+				if (b>=200000 && b < 250000)
+				cout << "Comisión es de 36000" "\n" << endl;
+				else 
+				if (b>=25000)
+				cout << "Comisión es de 50000" "\n" << endl;
+	
+	cout << "La venta del mes 3 es igual a " "\n"<< endl;
+	cin >> c;
+		if  (c >= 80000 && c< 120000)
+			cout << "Comisión es de 6400" "\n" << endl;
+		else
+			if (c >=120000 && c < 150000)
+			cout << "Comisión es de 13200" "\n" << endl;
+			else
+				if (c>=150000 && c < 200000)
+				cout << "Comisión es de 19500" "\n" << endl;
+				else
+				if (c>=200000 && c < 250000)
+				cout << "Comisión es de 36000" "\n" << endl;
+				else 
+				if (c>=25000)
+				cout << "Comisión es de 50000" "\n" << endl;
+	
+	cout << "La venta del mes 4 es igual a " "\n"<< endl;
+	cin >> d;
+		if  (d >= 80000 && d< 120000)
+			cout << "Comisión es de 6400" "\n" << endl;
+		else
+			if (d >=120000 && d < 150000)
+			cout << "Comisión es de 13200" "\n" << endl;
+			else
+				if (d>=150000 && d < 200000)
+				cout << "Comisión es de 19500" "\n" << endl;
+				else
+				if (d>=200000 && d < 250000)
+				cout << "Comisión es de 36000" "\n" << endl;
+				else 
+				if (d>=25000)
+				cout << "Comisión es de 50000" "\n" << endl;
+	
+	cout << "La venta del mes 5 es igual a " "\n"<< endl;
+	cin >> e;
+		if  (e >= 80000 && e< 120000)
+			cout << "Comisión es de 6400" "\n" << endl;
+		else
+			if (e >=120000 && e < 150000)
+			cout << "Comisión es de 13200" "\n" << endl;
+			else
+				if (e>=150000 && e < 200000)
+				cout << "Comisión es de 19500" "\n" << endl;
+				else
+				if (e>=200000 && e < 250000)
+				cout << "Comisión es de 36000" "\n" << endl;
+				else 
+				if (e>=25000)
+				cout << "Comisión es de 50000" "\n" << endl;
+
+	system ("pause");
+	return 0;
+}
