@@ -1,0 +1,53 @@
+#include "stdafx.h"
+#include "stdio.h"
+#include "conio.h"
+#include "iostream"
+#include "float.h"
+
+using namespace std;
+
+int _tmain(int argc, _TCHAR* argv[])
+{
+	float centigrados, fahrenheit, milla, metro, yarda, centimetro, nudo, kmh;
+	
+
+	cout<<("Alberto Javier Pelayo Brambila 2A 14300308.") <<endl;
+	cout <<" "<<endl;
+	cout <<("Este programa esta hecho por Alberto Javier Pelayo Brambila y te")<<endl;
+	cout <<("servira para hacer la conversion de: grados Centigrados a Fahrenheit, ")<<endl;
+	cout <<"millas a metros, yardas a centimetros y nudos a kilometros por hora."<<endl;
+	cout <<" "<<endl;
+
+	cout <<("Conversion de grados Centigrados a Fahrenheit.")<<endl;
+	cout <<"Por favor ingrese la cantidad de grados centigrados a convertir."<<endl;
+	cin>> centigrados;
+	fahrenheit=(centigrados*1.8)+32;
+	cout <<centigrados<<" grado(s) Centigrado(s) equivale(n) a " <<fahrenheit<<" grado(s) Fahrenheit."<<endl;
+	cout <<" "<<endl;
+
+	cout <<("Conversion de millas a metros.")<<endl;
+	cout <<"Por favor ingrese la cantidad de millas a convertir."<<endl;
+	cin>>milla;
+	metro=milla*1609.3440;
+	cout <<milla<<" milla(s) equivale(n) a " <<metro<<" metro(s)."<<endl;
+	cout <<" "<<endl;
+
+	cout <<("Conversion de yardas a centimetros.")<<endl;
+	cout <<"Por favor ingrese la cantidad de yardas a convertir."<<endl;
+	cin>>yarda;
+	centimetro=yarda*91.440;
+	cout <<yarda<<" yarda(s) equivale(n) a " <<centimetro<<" centimetro(s)."<<endl;
+	cout <<" "<<endl;
+
+	cout <<("Conversion de nudos a kilometros por hora.")<<endl;
+	cout <<"Por favor ingrese la cantidad de nudos a convertir."<<endl;
+	cin>>nudo;
+	kmh=nudo*1.852;
+	cout <<nudo<<" nudo(s) equivale(n) a " <<kmh<<" kilometro(s) por hora."<<endl;
+	cout <<" "<<endl;
+
+	cout <<"Fin del programa, Gracias por usar este programa, vuelva pronto."<<endl;
+
+	system ("pause");
+	return 0;
+}
