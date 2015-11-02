@@ -1,0 +1,59 @@
+#include "stdafx.h"
+#include "stdio.h"
+#include "conio.h"
+#include "iostream"
+#include "float.h"
+
+using namespace std;
+
+int _tmain(int argc, _TCHAR* argv[])
+{
+	float num1, num2, suma, resta, multi, divi;
+
+	cout<<("Alberto Javier Pelayo Brambila 2A 14300308.") <<endl;
+	cout <<" "<<endl;
+	cout <<("Este programa esta hecho por Alberto Javier Pelayo Brambila")<<endl;
+	cout <<("y te servira para realizar las 4 pincipales operaciones aritmeticas")<<endl;
+	cout <<" "<<endl;
+
+	cout <<"Suma"<<endl;
+	cout <<"Por favor ingrese el primer numero a sumar"<<endl;
+	cin>> num1;
+	cout <<"Por favor ingrese el segundo numero a sumar"<<endl;
+	cin>> num2;
+    suma=num1+num2;
+	cout <<"El resultado de la suma es: " <<suma<<endl;
+	cout <<" "<<endl;
+
+	cout <<"Resta"<<endl;
+	cout <<"Por favor ingrese el primer numero a restar"<<endl;
+	cin>> num1;
+	cout <<"Por favor ingrese el segundo numero a restar"<<endl;
+	cin>> num2;
+    resta=num1-num2;
+	cout <<"El resultado de la resta es: " <<resta<<endl;
+	cout <<" "<<endl;
+
+	cout <<"Multiplicacion"<<endl;
+	cout <<"Por favor ingrese el primer numero a multiplicar"<<endl;
+	cin>> num1;
+	cout <<"Por favor ingrese el segundo numero a multiplicar"<<endl;
+	cin>> num2;
+    multi=num1*num2;
+	cout <<"El resultado de la multiplicacion es: " <<multi<<endl;
+	cout <<" "<<endl;
+
+	cout <<"Division"<<endl;
+	cout <<"Por favor ingrese el primer numero a dividir"<<endl;
+	cin>> num1;
+	cout <<"Por favor ingrese el segundo numero a dividir"<<endl;
+	cin>> num2;
+    divi=num1/num2;
+	cout <<"El resultado de la division es: " <<divi<<endl;
+	cout <<" "<<endl;
+
+	cout <<"Fin del programa, Gracias por usar este programa, vuelva pronto."<<endl;
+
+	system ("pause");
+	return 0;
+}
