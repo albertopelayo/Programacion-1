@@ -1,0 +1,28 @@
+#include "stdafx.h"
+#include <iostream>
+
+
+using namespace std;
+
+int main()
+{
+  int contador,contador1, a;
+  contador1=0;
+  contador=-1;
+  a=0;
+  cout << "\t Estos son los números impares entre 0 y 100 \n";
+  cout << "\t -------------------------------------------\n";
+  do {
+	  
+ contador+= 2;
+ contador1++;           // Este otro contador cuenta el número de impares
+ cout << contador << " , ";
+ a=a+1;
+ }
+	  while (a<=49);
+
+ cout << "\nEl número de impares entre cero y cien es: " << contador1 << endl;
+ cout << "Pulse una tecla para acabar...";
+ cin.get();
+ return 0;
+}
